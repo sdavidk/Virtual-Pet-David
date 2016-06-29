@@ -15,15 +15,17 @@ namespace ConsoleApplication4
             //Welcome message
             //establish pet name
             // prompt main menu
+           
 
-
-            VirtualPet name = new PetName();
+            //VirtualPet name = new VirtualPet();
+           
+      
 
 
             Console.WriteLine("Welcome to VirtualPet!");
 
             Console.WriteLine("Enter a name for your pet");
-
+            VirtualPet myPet = new VirtualPet(Console.ReadLine());
             while (true)
 
             {
@@ -37,20 +39,20 @@ namespace ConsoleApplication4
 
                 if (choice == 1)
                 {
-                    name.FeedingPet();
+                    myPet.FeedingPet();
                 }
                 else if (choice == 2)
                 {
-                    name.WaterPet();
+                    myPet.WaterPet();
 
                 }
                 else if (choice == 3)
                 {
-                    name.PlayWithPet();
+                    myPet.PlayWithPet();
                 }
                 else if (choice == 4)
                 {
-                    name.TakePetToTheVet();
+                    myPet.TakePetToTheVet();
                 }
                 else
                 {
